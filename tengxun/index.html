@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/redian.css">
+    <style>
+
+        .wd_top {
+            height: 40vh;
+            background-color: white;
+            border-bottom: 12px solid #e9e9e9;
+        }
+
+        .wd_top .via {
+            height: 25vh;
+            border-bottom: 1px solid #e9e9e9;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        .via img {
+            width: 20vw;
+            height:14vh;
+            border-radius: 50%;
+        }
+
+        .vip {
+            position: relative;
+        }
+
+        .vip img {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            margin: auto;
+            display: block;
+            width: 21px;
+            height: 21px;
+        }
+
+        .vip img:nth-child(1) {
+            left: 0px;
+            float: left;
+        }
+
+        .vip img:nth-child(3) {
+            right: 0px;
+            float: right;
+        }
+
+        .vip span {
+            float: left;
+            display: block;
+            padding-left: 30px;
+        }
+
+        .history {
+           /* height: 40vh; */
+            /* border: 1px solid blue; */
+            margin: 12px 0px 1px 0px;
+            overflow: scroll;
+        }
+
+        .history .history_xiao {
+            width: 150%;
+            height: 82%;
+            border: 1px solid orangered;
+        }
+        .history_xiao img {
+            margin:40px 10px 20px 30px;
+            width: 30vw;
+            height: 18vh;
+        }
+        .order {
+            height: 12vh;
+            border: 1px solid green;
+        }
+
+        .history_two {
+            height: 12vh;
+            border: 1px solid olivedrab;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <div class="all">
+            <div class="shoye">
+                <div class="top">
+                    <img src="./imgs/图标 5.svg" alt="">
+                    <input type="text" placeholder="请输入影片">
+                </div>
+                <div class="content">
+                    <div class="banner">
+                        <img src="./imgs/banner.jpg" alt="">
+                        <span>【猎毒人】吕云鹏计划通楚天南中风下线？</span>
+                    </div>
+                    <div class="dapian_one">
+                        <h3>暑假刷片看这里！</h3>
+                        <div class="pian">
+                        </div>
+                    </div>
+                    <div class="dapian_two">
+                        <h3>热闻一览</h3>
+                        <div class="pian2">
+                        </div>
+                    </div>
+                    <div class="dapian_san">
+                        <h3>明日之子·九大厂牌候选人</h3>
+                        <div class="pian3">
+                            <div class="xiao">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="wuyong"></div>
+            </div>
+            <div class="remen">
+                <div class="rm_top">
+                    <div class="rm_xiao">
+                        <span class="classify">
+                        </span>
+                    </div>
+                </div>
+                <div class="rm_center">
+                    <!-- <div class="video_one">
+                        <img src="./imgs/rm-1.jpeg" alt="" class="tu_1">
+                        <p class="piao">王者荣耀：英雄就是比普通人更变态的辩变态，张飞这种玩法最无敌！！</p>
+                        <div class="jianjie">
+                            <div class="touxiang" style="background-image: url(./imgs/rmyh-1.jpeg);"></div>
+                            <div class="label">王者荣耀</div>
+                            <div class="label">朋程说游</div>
+                            <div class="label_right">
+                                <img src="./imgs/rmtb-1.svg" alt="">
+                                <img src="./imgs/rmtb-2.png" alt="">
+                                <img src="./imgs/rmtb-3.svg" alt="">
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="wuyong"></div>
+            </div>
+            <div class="pindao">
+                12345
+            </div>
+            <div class="wode">
+                <div class="wd_top">
+                    <div class="via">
+                        <img src="./imgs/via.jpg" alt="">
+                        <h2>Dreity</h2>
+                    </div>
+                    <div class="vip">
+                        <img src="./imgs/vip_one.png" alt="">
+                        <span>开通VIP会员</span>
+                        <img src="./imgs/vip_two.svg" alt="">
+                    </div>
+                </div>
+                
+                <div class="history">
+                    <div class="history_xiao">
+                        <div class="lishi">
+                            <img src="./imgs/history-1.jpg" alt="">
+                            <p>制裁特工</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="order"></div>
+                <div class="history_two"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="dianji">
+                <img src="./imgs/shouye_a.png" alt="">
+                </br>
+                <span>首页</span>
+            </div>
+            <div class="dianji">
+                <img src="./imgs/redian.png" alt="">
+                </br>
+                <span>热门</span>
+            </div>
+            <div class="dianji">
+                <img src="./imgs/pindao.png" alt="">
+                </br>
+                <span>频道</span>
+            </div>
+            <div class="dianji">
+                <img src="./imgs/wode.png" alt="">
+                </br>
+                <span>我的</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/click.js"></script>
+<script src="./js/remen.js"></script>
+<script src="./js/wode.js"></script>
+
+
+</html>
