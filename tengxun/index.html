@@ -8,83 +8,86 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/redian.css">
+    <link rel="stylesheet" href="./css/wode.css">
+    <link rel="stylesheet" href="./css/kandan.css">
     <style>
-
-        .wd_top {
-            height: 40vh;
-            background-color: white;
-            border-bottom: 12px solid #e9e9e9;
-        }
-
-        .wd_top .via {
-            height: 25vh;
-            border-bottom: 1px solid #e9e9e9;
-            text-align: center;
-            padding-top: 40px;
-        }
-
-        .via img {
-            width: 20vw;
-            height:14vh;
-            border-radius: 50%;
-        }
-
-        .vip {
+        .pindao {
             position: relative;
         }
 
-        .vip img {
-            position: absolute;
-            top: 0px;
-            bottom: 0px;
-            margin: auto;
-            display: block;
-            width: 21px;
-            height: 21px;
-        }
-
-        .vip img:nth-child(1) {
-            left: 0px;
-            float: left;
-        }
-
-        .vip img:nth-child(3) {
-            right: 0px;
-            float: right;
-        }
-
-        .vip span {
-            float: left;
-            display: block;
-            padding-left: 30px;
-        }
-
-        .history {
-           /* height: 40vh; */
+        .pd_top {
+            width: 100%;
+            height: 50px;
+            padding-top: 30px;
             /* border: 1px solid blue; */
-            margin: 12px 0px 1px 0px;
-            overflow: scroll;
+            vertical-align: middle;
         }
 
-        .history .history_xiao {
-            width: 150%;
-            height: 82%;
-            border: 1px solid orangered;
-        }
-        .history_xiao img {
-            margin:40px 10px 20px 30px;
-            width: 30vw;
-            height: 18vh;
-        }
-        .order {
-            height: 12vh;
-            border: 1px solid green;
+        .pd_top img {
+            position: absolute;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
         }
 
-        .history_two {
-            height: 12vh;
-            border: 1px solid olivedrab;
+        .pd_top span {
+            font-size: 16px;
+            margin-left: 20px;
+            font-weight: bold;
         }
+
+        .pd_top>span:nth-child(1) {
+            color: rgba(255, 141, 26, 1);
+        }
+
+        .pd_two {
+            width: 100%;
+            /* border: 1px solid green; */
+            display: flex;
+            justify-content: space-around
+        }
+
+        .pd_two div {
+            width: 75px;
+            height: 27px;
+            text-align: center;
+            line-height: 27px;
+            background-color: rgba(210, 210, 210, 0.2);
+            color: rgba(128, 128, 128, 1);
+            border-radius: 4px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .pd_banner {
+            width: 100%;
+            height: 30vh;
+            /* border: 1px solid blue; */
+            background-image: url(./imgs/频道/pd-1.jpg);
+            background-size: cover;
+            background-position: -218px 0;
+        }
+        .gun{
+            float: left;
+        }
+        .gun>p:nth-child(2){
+            font-size: 14px;
+        }
+        .gun>p:nth-child(3){
+            font-size: 12px;
+            color: rgba(166, 166, 166, 1);
+        }
+        .tu{
+            width:200px;
+            height: 120px;
+            /* background-image: url(./imgs/频道/pd-2.jpeg); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 -77px;
+        }
+
+
     </style>
 </head>
 
@@ -148,13 +151,33 @@
                 <div class="wuyong"></div>
             </div>
             <div class="pindao">
-                12345
+                <div class="pd_top">
+                    <span>电视剧</span>
+                    <span>电影</span>
+                    <span>综艺</span>
+                    <span>动漫</span>
+                    <img src="./imgs/图标 5.svg" alt="">
+                </div>
+                <div class="pd_two">
+                    <div>偶像爱情</div>
+                    <div>宫斗谋权</div>
+                    <div>玄幻史诗</div>
+                    <div>全部分类</div>
+                </div>
+                <div class="pd_banner">
+                </div>
+                <p>【猎毒人】吕云鹏计划通楚天南中风下线？</p>
+                <div class="pd-pian1">
+                    <h4 style="margin-top: 20px;">热剧精选</h4>
+                    <div class="pd-img">    
+                    </div>
+                </div>
             </div>
             <div class="wode">
                 <div class="wd_top">
                     <div class="via">
                         <img src="./imgs/via.jpg" alt="">
-                        <h2>Dreity</h2>
+                        <h2>Xiang</h2>
                     </div>
                     <div class="vip">
                         <img src="./imgs/vip_one.png" alt="">
@@ -162,18 +185,35 @@
                         <img src="./imgs/vip_two.svg" alt="">
                     </div>
                 </div>
-                
+                <div class="xian"></div>
+                <h3>观看历史</h3>
                 <div class="history">
                     <div class="history_xiao">
-                        <div class="lishi">
-                            <img src="./imgs/history-1.jpg" alt="">
-                            <p>制裁特工</p>
-                        </div>
+
                     </div>
-                    
                 </div>
-                <div class="order"></div>
-                <div class="history_two"></div>
+                <div class="order">
+                    <h3>我的看单</h3>
+                    <img src="./imgs/vip_two.svg" alt="">
+                </div>
+                <div class="xian2"></div>
+                <div class="history_two">
+                    <h3>观看历史</h3>
+                    <img src="./imgs/vip_two.svg" alt="">
+                </div>
+            </div>
+            <div class="kandan">
+                <div class="kandan_top">
+                    <img src="./imgs/kandan.svg" alt="" class="return">
+                    <p>我的看单</p>
+                    <div class="kandan_quit"></div>
+                </div>
+                <div class="kandan_center">
+
+                </div>
+                <div class="kandan_footer">
+                    <p>编辑</p>
+                </div>
             </div>
         </div>
         <div class="footer">
@@ -205,6 +245,7 @@
 <script src="./js/click.js"></script>
 <script src="./js/remen.js"></script>
 <script src="./js/wode.js"></script>
+<script src="./js/pindao.js"></script>
 
 
 </html>

@@ -1,0 +1,108 @@
+        /* .wode {
+            overflow: scroll;
+        } */
+        .wd_top {
+            height: 40vh;
+            background-color: white;
+        }
+
+        .wd_top .via {
+            height: 25vh;
+            text-align: center;
+            padding-top: 40px;
+            border-bottom: 1px solid #9e9e9e;
+        }
+
+        .via img {
+            width: 20vw;
+            border-radius: 50%;
+
+        }
+
+        .vip {
+            position: relative;
+        }
+
+        .vip img {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            margin: auto;
+            display: block;
+            width: 21px;
+            height: 21px;
+        }
+
+        .vip img:nth-child(1) {
+            left: 0px;
+            float: left;
+        }
+
+        .vip img:nth-child(3) {
+            right: 0px;
+            float: right;
+        }
+
+        .vip span {
+            float: left;
+            display: block;
+            padding-left: 30px;
+        }
+
+        .history {
+            margin: 12px 0px 1px 0px;
+            overflow: scroll;
+            padding-top: 10px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #9e9e9e;
+        }
+        .history::-webkit-scrollbar {
+            display: none
+        }
+
+        .history .history_xiao {
+            width: 200%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .lishi {
+            text-align: center;
+            font-size: 14px;
+            /* margin: 0px 5px; */
+           
+            
+        }
+
+        .lishi img {
+            width: 30vw;
+            height: 10vh;
+            border-radius: 5px;
+            display: block;
+            /* text-align: center; */
+        }
+        .xian2,
+        .xian {
+            height: 30px;
+            background-color: #d3d3d3;
+            margin-bottom: 30px;
+        }
+        .xian2 {
+            height: 6px;
+            margin-bottom: 0px;
+        }
+
+
+        .order,.history_two {
+            height: 12vh;
+            /* border: 1px solid green; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .order img,
+        .history_two img {
+            width: 21px;
+            height: 21px;
+        }
+        

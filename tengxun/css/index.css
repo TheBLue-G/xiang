@@ -1,9 +1,9 @@
         /*  最外框 */
-        * {
+        *{
             margin: 0;
             padding: 0;
+    
         }
-
         .app {
             width: 98vw;
             /* height: 300px; */
