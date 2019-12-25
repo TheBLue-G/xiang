@@ -41,7 +41,6 @@ for (var i = 0 ; i < ls.length; i++){
                         </div>
     `
 }
-console.log(movie_div)
 $(".history_xiao").append($(movie_div))
 $(".order").click(function() {
     $(".wode").css({

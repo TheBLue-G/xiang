@@ -10,85 +10,9 @@
     <link rel="stylesheet" href="./css/redian.css">
     <link rel="stylesheet" href="./css/wode.css">
     <link rel="stylesheet" href="./css/kandan.css">
-    <style>
-        .pindao {
-            position: relative;
-        }
-
-        .pd_top {
-            width: 100%;
-            height: 50px;
-            padding-top: 30px;
-            /* border: 1px solid blue; */
-            vertical-align: middle;
-        }
-
-        .pd_top img {
-            position: absolute;
-            right: 0;
-            width: 30px;
-            height: 30px;
-            vertical-align: middle;
-        }
-
-        .pd_top span {
-            font-size: 16px;
-            margin-left: 20px;
-            font-weight: bold;
-        }
-
-        .pd_top>span:nth-child(1) {
-            color: rgba(255, 141, 26, 1);
-        }
-
-        .pd_two {
-            width: 100%;
-            /* border: 1px solid green; */
-            display: flex;
-            justify-content: space-around
-        }
-
-        .pd_two div {
-            width: 75px;
-            height: 27px;
-            text-align: center;
-            line-height: 27px;
-            background-color: rgba(210, 210, 210, 0.2);
-            color: rgba(128, 128, 128, 1);
-            border-radius: 4px;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-
-        .pd_banner {
-            width: 100%;
-            height: 30vh;
-            /* border: 1px solid blue; */
-            background-image: url(./imgs/频道/pd-1.jpg);
-            background-size: cover;
-            background-position: -218px 0;
-        }
-        .gun{
-            float: left;
-        }
-        .gun>p:nth-child(2){
-            font-size: 14px;
-        }
-        .gun>p:nth-child(3){
-            font-size: 12px;
-            color: rgba(166, 166, 166, 1);
-        }
-        .tu{
-            width:200px;
-            height: 120px;
-            /* background-image: url(./imgs/频道/pd-2.jpeg); */
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 0 -77px;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="./css/pindao.css">
+    <link rel="stylesheet" href="./css/xiangxi.css">
+    <link rel="stylesheet" href="./css/sousuo.css">
 </head>
 
 <body>
@@ -97,7 +21,7 @@
             <div class="shoye">
                 <div class="top">
                     <img src="./imgs/图标 5.svg" alt="">
-                    <input type="text" placeholder="请输入影片">
+                    <input type="text" placeholder="请输入影片" class="sou">
                 </div>
                 <div class="content">
                     <div class="banner">
@@ -169,7 +93,16 @@
                 <p>【猎毒人】吕云鹏计划通楚天南中风下线？</p>
                 <div class="pd-pian1">
                     <h4 style="margin-top: 20px;">热剧精选</h4>
-                    <div class="pd-img">    
+                    <div class="pd-img">
+                    </div>
+                    <h4 style="margin-top: 20px;">英美热剧追追追</h4>
+                    <div class="pd-img2">
+                        <!-- <div class="gun_2">
+                            <div class="tu" style="background-image:url(./imgs/频道/pd-2.1.jpeg);">
+                            </div>
+                            <p>《西部世界2》-9.3豆瓣高分烧脑神作</p>
+                            <p></p>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -209,10 +142,114 @@
                     <div class="kandan_quit"></div>
                 </div>
                 <div class="kandan_center">
-
                 </div>
                 <div class="kandan_footer">
                     <p>编辑</p>
+                </div>
+            </div>
+            <div class="xiangxi">
+                <div class="xiangxi_top">
+                    <div class="xx_top">
+                        <img src="./imgs/kandan.svg" alt="" class="fh">
+                        <h3>腾讯视频</h3>
+                    </div>
+                    <div class="xx_two">
+                        <img src="./imgs/xiangxi/xx1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="xiangxi_center">
+                    <div class="guanggao">
+                        <p>广告倒计时15秒</p>
+                        <div class="gg_one">
+                            <span>5秒后可跳过</span>
+                        </div>
+                    </div>
+                    <div class="jj">
+                        <div class="jj_one">
+                            <p>明日之子 第2季</p>
+                            <div class="jj_one_1">
+                                <p>简介</p>
+                                <img src="./imgs/vip_two.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="jj_two">
+                            <span>自制 选秀 2.5亿</span>
+                        </div>
+                        <div class="jj_san">
+                            <div class="jj_san_1">
+                                <span>高清</span>
+                                <img src="./imgs/xiangxi/jj-1.svg" alt="">
+                            </div>
+                            <div class="jj_san_2">
+                                <img src="./imgs/xiangxi/jj-2.svg" alt="">
+                                <img src="./imgs/xiangxi/jj-3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kandian">
+                        <div class="kd_top">
+                            <span>2018-07-28期 看点</span>
+                            <img src="./imgs/xiangxi/jiantou.svg" alt="">
+                        </div>
+                        <div class="kd_center">
+
+                        </div>
+                    </div>
+                    <div class="pianhua">
+                        <h4>精彩片花</h4>
+                        <div class="ph_top">
+                        </div>
+                        <p class="ph_footer">全部</p>
+                    </div>
+                    <div class="tuijian">
+                        <h4>为你推荐</h4>
+                        <div class="tj_top">
+                        </div>
+                        <p class="tj_footer">全部</p>
+                    </div>
+                    <div class="pinglun">
+                        <div class="pinglun_top">
+                            <img src="./imgs/xiangxi/img1.jpg" alt="">
+                            <input type="text" name="" id="" placeholder="请输入内容" class="dazi">
+                        </div>
+                        <div class="pl_center">
+                            <div class="pl_left">
+                                <img src="./imgs/xiangxi/img2.png" alt="">
+                                <p>VP</p>
+                                <div class="pl_re">热</div>
+                            </div>
+                            <div class="pl_right">
+                                <img src="./imgs/xiangxi/img4.svg" alt="">
+                                <p>96</p>
+                                <img src="./imgs/xiangxi/img5.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="wenzi">
+                            <p>
+                                为什么要组队PK，看完这一期我猜大概是因为节目组想要保住某个人，就像上去的赫兹一样。如果有反驳，请告诉我为什么孙泽源和斯外戈比孙泽源进了，斯外戈可是表现的比他还要精彩，还有那个曾，我就不说为什么了因为和他一组的蔡维泽我很喜欢，其次就是那个排行榜的戴景耀，我都不知道他是谁，第一期都没过的人即使靠热度靠粉丝推回来我也认为没啥看头，要是我我就先完善自己再再下一期回来。我不是键盘侠，这是我的一些看法，还与欧当我的面我也这么说。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sousuo">
+                <div class="sou_top">
+                    <div class="top_one">
+                        <img src="./imgs/xiangxi/ss1.svg" alt="">
+                        <input class="top_one" type="text" name="" id="" placeholder="">
+                    </div>
+                    <div class="top_two">取消</div>
+                </div>
+                <div class="sou_center">
+                    <span>历史搜索</span>
+                    <img src="./imgs/xiangxi/del.png" alt="">
+                </div>
+                <div class="sou_cn1">
+                    明日之子
+                </div>
+                <div class="sou_list">
+
                 </div>
             </div>
         </div>
@@ -246,6 +283,9 @@
 <script src="./js/remen.js"></script>
 <script src="./js/wode.js"></script>
 <script src="./js/pindao.js"></script>
-
+<script src="./js/allclick.js"></script>
+<script src="./js/xaingxi.js"></script>
+<script src="./js/list.js"></script>
+<script src="./js/kandian.js"></script>
 
 </html>
