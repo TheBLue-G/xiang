@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    .dian {
+        margin: 0 auto;
+        width: 70px;
+        height: 70px;
+        background-color: black;
+        color: blanchedalmond;
+    }
+
+    .dianji{
+        width: 500px;
+        height: 380px;
+    }
+    .dianji img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<body>
+    <div class="dian">
+    </div>
+</body>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./layer/layer.js"></script>
+<script>
+    //弹出一个页面层
+    $('.dian').on('click', function () {
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: 0,
+            area: ['auto'],
+            skin: 'layui-layer-nobg', //没有背景色
+            shadeClose: true,
+            content: '\<\div class="dianji"><img src="./img/1.jpg" alt="">\<\/div>'
+        })
+    })
+</script>
+</html>
