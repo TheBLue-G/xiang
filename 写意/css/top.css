@@ -1,0 +1,60 @@
+.nav li:hover {
+    background-color: #cfdb00;
+}
+
+nav {
+    box-shadow: 2px 2px 5px #888888;
+}
+
+.navbar-brand {
+    height: 60px;
+}
+
+.navbar-brand img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-nav>li>a {
+    line-height: 30px;
+}
+
+.nav>li>a {
+    padding: 15px 25px;
+}
+
+.centent .container {
+    text-align: center;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.centent {
+    padding-bottom: 100px;
+}
+
+.zi {
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.container i {
+    vertical-align: middle;
+}
+
+.container-top {
+    text-align: center;
+    padding: 40px 0px;
+}
+
+
+
+.footer {
+    height: 200px;
+}
+.footer .dibu {
+    text-align: center;
+}

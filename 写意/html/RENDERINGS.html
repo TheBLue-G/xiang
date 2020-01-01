@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index2.css">
+    <link rel="stylesheet" href="../css/top.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/RENDERINGS.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <!-- <span class="sr-only">Toggle navigation</span> -->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="../img/shininglogo.png" alt="">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="./ABOUT.html" target="_self">ABOUT</a></li>
+                        <li><a href="./RENDERINGS.html">RENDERINGS</a></li>
+                        <li><a href="./BIM.html">BIM</a></li>
+                        <li><a href="./3D ANIMAT.html">3D ANIMAT</a></li>
+                        <li><a href="./CONTACT.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="renderings_content">
+        <div class="container">
+            <div class="container-top">
+                <i>
+                    <img src="../img/line_yellow.png" alt="">
+                </i>
+                <span class="zi"> DIGITAL EFFECT DRAWING </span>
+                <i>
+                    <img src="../img/line_yellow.png" alt="">
+                </i>
+            </div>
+            <div class="banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../img/drawing-big1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/drawing-big1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/drawing-big1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/drawing-big1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/drawing-big1.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pubu">
+                    <div class="row container">
+                    </div>
+            </div>
+        </div>
+        <div class="footer container-fluid ">
+            <div class="container container-top">
+                <i>
+                    <img src="../img/line_yellow.png" alt="">
+                </i>
+                <span class="zi">CONTACT US</span>
+                <i>
+                    <img src="../img/line_yellow.png" alt="">
+                </i>
+            </div>
+            <div class="container dibu">
+                <span class="">
+                    Email：eric@shining365.com
+                    Mobile Phone：86 138 1690 3400
+                    Tel：+86 21 6598 6866-304+86 21 6598 3188-304
+                </span>
+            </div>
+        </div>
+</body>
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/swiper.jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 2000,
+        continuousVertical: true,
+    })
+
+    var pubu_wrap = $(".row")
+    var lie_w = 200
+    var lie_num =parseInt( pubu_wrap.width() / lie_w )
+
+
+    // 创建n列
+    for (var i = 0; i < lie_num; i++) {
+        pubu_wrap.append($('<div class = "lie" style = "width:'+ lie_w +'px;"> </div>')) 
+    }
+    
+    var imgs = []
+    function loaded () {
+        for (var i = 0; i < imgs.length; i++) {
+            console.log(imgs[i].src)
+            var min_h_index = get_min_h_index()
+            $(".lie").eq(min_h_index).append($(imgs[i]))
+        }
+    }
+
+    // 获取 高度  最小的 那一列 的下标
+    function get_min_h_index () {
+        var xia_biao = 0
+        var min_height = $(".lie").eq(0).height()
+        $(".lie").each(function (index , item) {
+            if ($(item).height() < min_height) {
+                min_height = $(item).height()
+                xia_biao = index
+            }
+        })
+        return xia_biao
+    }
+    // 异步加载
+    for (var i = 0; i < 15; i++) {
+        var one_img = new Image()
+        console.log(one_img)
+        one_img.src = "../img/p_0"+i+".jpg"
+        one_img.onload = function () {
+            imgs.push(this)
+            if (imgs.length >= 15) {
+                loaded()
+            }
+        }
+    }
+    window.onresize = function () {
+        console.log(this.innerWidth)
+    }   
+</script>
+
+</html>
